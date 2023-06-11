@@ -67,13 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\FFM.mdf" />
     <Content Include="App_Data\FFMDatabase.mdf" />
     <Content Include="App_Data\FFMDatabase_log.ldf">
       <DependentUpon>FFMDatabase.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\FFM_log.ldf">
-      <DependentUpon>FFM.mdf</DependentUpon>
     </Content>
     <Content Include="Booking.aspx" />
     <Content Include="CSS\style.css" />

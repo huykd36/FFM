@@ -13,23 +13,90 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-         .auto-style1 {
-             margin-left: 0;
-         }
+         .Table-booking {
+            position:  absolute;
+            bottom: 0;
+            left: 0;
+            top: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            z-index: 99;
+        }
+        .Hotline {
+            text-align: center;
+            height: 500px;
+            width: 190px;
+        }
+        .auto-style5 {
+            border: 1px solid #000000;
+            padding: 0;
+            width: 190px;
+        }
+        .auto-style6 {
+            width: 190px;
+            height: 50px;
+        }
+        .auto-style7 {
+            border: 1px solid #000000;
+            text-align: center;
+            height: 335px;
+            width: 190px;
+        }
      </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <header>
-                <asp:ImageButton ID="Logo_FFM" runat="server" ImageUrl="~/Images/Logo.png" />
-                <%--<h2 class="logo"></h2>--%>
+                <asp:imagebutton id="logo_ffm" runat="server" imageurl="~/images/logo.png" />
+                <h2 class="logo"></h2>
                 <nav class="navigation">
-                    <a href="~/DefaultPage.aspx" runat="server">Home</a>
-                    <a href="BookingPage.aspx">Booking</a>
-                    <a href="~/AboutUs.aspx" runat="server">About us</a>
+                    <a href="~/defaultpage.aspx" runat="server">home</a>
+                    <a href="bookingpage.aspx">booking</a>
+                    <a href="~/aboutus.aspx" runat="server">about us</a>
                     <button class="btnLogin-popup">Login</button>
+
                 </nav>
             </header>
+        <div>
+            <table class="Table-booking">
+                <tr>
+                    <td class="auto-style5">
+                        <input id="btn_thuesan" class="auto-style6" type="button" value="Thuê sân" /></td>
+                    <td rowspan="6">&nbsp;</td>
+                    
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        <input id="btn_nhansan" class="auto-style6" type="button" value="Nhận sân" /></td>
+                    
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        <input id="btn_thanhtoan" class="auto-style6" type="button" value="Thanh toán" /></td>
+                    
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        <input id="btn_dichvu" class="auto-style6" type="button" value="Dịch vụ" /></td>
+                    
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        <input id="btn_lichsu" class="auto-style6" type="button" value="Lịch sử hóa đơn" /></td>
+                    
+                </tr>
+                <tr>
+                    <td class="auto-style7">
+                        <p>Hotline</p>
+                        <a>0943.390.302</a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
