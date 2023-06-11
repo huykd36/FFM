@@ -75,7 +75,7 @@
     <Content Include="App_Data\FFM_log.ldf">
       <DependentUpon>FFM.mdf</DependentUpon>
     </Content>
-    <Content Include="BookingPage.aspx" />
+    <Content Include="Booking.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="DefaultPage.aspx" />
     <Content Include="Global.asax" />
@@ -90,12 +90,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookingPage.aspx.cs">
-      <DependentUpon>BookingPage.aspx</DependentUpon>
+    <Compile Include="Booking.aspx.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BookingPage.aspx.designer.cs">
-      <DependentUpon>BookingPage.aspx</DependentUpon>
+    <Compile Include="Booking.aspx.designer.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.Master.cs">
+      <DependentUpon>Booking.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Booking.Master.designer.cs">
+      <DependentUpon>Booking.Master</DependentUpon>
     </Compile>
     <Compile Include="DefaultPage.aspx.cs">
       <DependentUpon>DefaultPage.aspx</DependentUpon>
@@ -142,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DefaultPage.Master" />
+    <Content Include="Booking.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

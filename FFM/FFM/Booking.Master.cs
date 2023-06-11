@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace FFM
 {
-    public partial class BookingPage : System.Web.UI.Page
+    public partial class Booking : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
