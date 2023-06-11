@@ -13,29 +13,30 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px ;
+    padding: 0px 100px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('Images/backgroundHomePage.jpg');
-    background-repeat:  no-repeat;
+    background-image: url(/Images/backgroundHomePage.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; 
-    background-position:top;
+    background-size: cover;
+    background-position: top;
 }
 
-.logo{
-    font-size: 2em;
+.logo {
+    font-size: 1em;
     color: #fff;
     user-select: none;
+    
 }
 .navigation a {
     position: relative;
@@ -46,19 +47,19 @@ body{
     margin-left: 40px;
 }
 
-.navigation a::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scale(0);
-    transition: transform.5s;
-}
+    .navigation a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scale(0);
+        transition: transform.5s;
+    }
 
 .navigation a:hover::after{
     transform-origin: left;
@@ -83,7 +84,7 @@ body{
 .navigation .btnLogin-popup:hover{
     
     background: #fff;
-    color: #162938;
+    color: #030B58;
 }
 
 .wrapper{
@@ -147,7 +148,7 @@ body{
     right: 0;
     width: 45px;
     height: 45px;
-    background: #162938;
+    background: #030B58;
     font-size: 2em;
     color: #fff;
     display: flex;
@@ -160,7 +161,7 @@ body{
 
 .form-box h2 {
     font-size: 2em;
-    color: #162938;
+    color: #ffffff;
     text-align: center;
 
 }
@@ -169,7 +170,7 @@ body{
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #162938;
+    border-bottom: 2px solid #030B58;
     margin: 30px 0;
 }
 
@@ -179,41 +180,42 @@ body{
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #162938;
+    color: #FFFFFF;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
 }
 
-.input-box input:focus~label,
-.input-box input:valid~label{
-    top: -5px;
-}
+    .input-box input:focus ~ label,
+    .input-box input:valid ~ label {
+        top: -5px;
+    }
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #162938;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: #FFFFFF;
+        
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+    }
 
 .input-box .icon{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #162938;
+    color: #FFFFFF;
     line-height: 57px;
 
 }
 
 .remember-forgot{
     font-size: .9em;
-    color: #162938;
+    color: #FFFFFF;
     font-weight: 500;
     margin: -15px 0 15px;
     /* display: flex; */
@@ -221,14 +223,14 @@ body{
 }
 
 .remember-forgot label input{
-    accent-color: #162938;
+    accent-color: #FFFFFF;
     margin-right: 3px;
 
 }
 .btn_login{
     width: 100%;
     height: 45px;
-    background: #162938;
+    background: #030B58;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -242,13 +244,13 @@ body{
 
 .btn_login:hover{
     background: #fff;
-    color: #162938;
+    color: #030B58;
 }
 
 .btn_register{
     width: 100%;
     height: 45px;
-    background: #162938;
+    background: #030B58;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -262,12 +264,12 @@ body{
 
 .btn_register:hover{
     background: #fff;
-    color: #162938;
+    color: #030B58;
 }
 
 .login-register{
     font-size: .9em;
-    color: #162938;
+    color: #FFFFFF;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
@@ -275,7 +277,7 @@ body{
 }
 
 .login-register p a{
-    color: #162938;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 600;
 
@@ -283,4 +285,30 @@ body{
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+.AboutUs {
+  
+    position: relative;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2Aboutus{
+    
+    margin-left: 300px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+.pAboutus {
+    margin-right: 300px;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.auto-style2 {
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }

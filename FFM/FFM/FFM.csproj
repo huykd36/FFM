@@ -67,15 +67,50 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\FFM.mdf" />
+    <Content Include="App_Data\FFMDatabase.mdf" />
+    <Content Include="App_Data\FFMDatabase_log.ldf">
+      <DependentUpon>FFMDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\FFM_log.ldf">
+      <DependentUpon>FFM.mdf</DependentUpon>
+    </Content>
+    <Content Include="BookingPage.aspx" />
     <Content Include="CSS\style.css" />
+    <Content Include="DefaultPage.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
     <Content Include="homepage.html" />
+    <Content Include="AboutUs.aspx" />
     <Content Include="Images\backgroundHomePage.jpg" />
+    <Content Include="Images\Football-removebg-preview-smaller.png" />
+    <Content Include="Images\Logo.png" />
     <Content Include="Javascripts\script.js" />
+    <Content Include="testform.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingPage.aspx.cs">
+      <DependentUpon>BookingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingPage.aspx.designer.cs">
+      <DependentUpon>BookingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultPage.aspx.cs">
+      <DependentUpon>DefaultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultPage.aspx.designer.cs">
+      <DependentUpon>DefaultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultPage.Master.cs">
+      <DependentUpon>DefaultPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultPage.Master.designer.cs">
+      <DependentUpon>DefaultPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -86,9 +121,27 @@
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LopDungChung.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testform.aspx.cs">
+      <DependentUpon>testform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testform.aspx.designer.cs">
+      <DependentUpon>testform.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DefaultPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -98,7 +151,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

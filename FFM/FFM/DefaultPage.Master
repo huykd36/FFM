@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultPage.master.cs" Inherits="FFM.DefaultPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>HomePage</title>
+        <link rel="stylesheet" href="./CSS/style.css"/>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style type="text/css">
+         .auto-style1 {
+             margin-left: 0;
+         }
+     </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+                <asp:ImageButton ID="Logo_FFM" runat="server" ImageUrl="~/Images/Logo.png" />
+                <%--<h2 class="logo"></h2>--%>
+                <nav class="navigation">
+                    <a href="~/DefaultPage.aspx" runat="server">Home</a>
+                    <a href="#">Booking</a>
+                    <a href="~/AboutUs.aspx" runat="server">About us</a>
+                    <button class="btnLogin-popup">Login</button>
+                </nav>
+            </header>
+
+            <div class="wrapper">
+                <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <%--<asp:TextBox CssClass="textbox" ID="login_email_txt" runat="server" required></asp:TextBox>--%>
+                            <input id="login_email_txt" type="email" runat="server" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <%--<asp:TextBox CssClass="textbox" ID="login_pass_txt" runat="server" required></asp:TextBox>--%>
+                            <input id="login_pass_txt" type="password" required runat="server">
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <asp:Button class="btn_login" ID="btn_login" runat="server" Text="Login" OnClick="btn_login_Click" />
+                        <%--<button type="submit" class="btn_login">Login</button>--%>
+                        <div class="login-register">
+                            <p>
+                                Don't have a account?
+                                <a href="#" class="register-link">Register</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                    <h2>Registration</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span>
+                            <%--<asp:TextBox CssClass="textbox" ID="register_username_txt" runat="server" required></asp:TextBox>--%>
+                            <input id="register_username_txt" type="text" runat="server" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <%--<asp:TextBox CssClass="textbox" ID="register_email_txt" runat="server" required></asp:TextBox>--%>
+                            <input id="register_email_txt" type="email" runat="server" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <%--<asp:TextBox CssClass="textbox" ID="register_password_txt" runat="server" required></asp:TextBox>--%>
+                            <input id="register_password_txt" type="password" runat="server" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label>
+                                <input type="checkbox"> I agree to the terms & conditions
+                            </label>
+                        </div>
+                        <asp:Button class="btn_register" ID="btn_register" runat="server" Text="Register" OnClick="btn_register_Click"/>
+                        <%--<button type="submit" class="btn_register">Register</button>--%>
+                        <div class="login-register">
+                            <div>
+                                <asp:Label ID="lb_nofic" runat="server" Text="Label"></asp:Label>
+                            </div>
+                            <p>
+                                Already have an account?
+                                <a href="#" class="login-link">Login</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <script src="Javascripts/script.js"></script>
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </form>
+</body>
+</html>
